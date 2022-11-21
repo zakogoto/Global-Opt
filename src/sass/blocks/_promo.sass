@@ -1,0 +1,106 @@
+.promo
+    padding-bottom: 82px
+    background: url('../img/promo/promo_bg.jpg') center (center/cover) no-repeat
+    &__header
+        padding-top: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__menu
+        display: flex
+        height: 24px
+        justify-content: space-between
+        list-style-type: none
+        &-item
+            padding:0 15px
+            border-right: 1px dotted 
+            font-size: 15px
+            line-height: 16px
+            font-weight: 400
+            &:last-child
+                border-right: none
+            a
+                color: #ffffff
+                text-decoration: none
+                &:hover
+                    color: var(--main-color)
+                    text-decoration: underline
+    &__phone
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-right: 18px
+        &-descr
+            font-size: 14px
+            line-height: 24px
+            font-weight: 300
+            color: #ffffff
+        &-link
+            font-size: 19px
+            line-height: 24px
+            font-weight: 700
+            color: #ffffff
+            text-decoration: none
+    &__descr
+        font-size: 24px
+        line-height: 1.2
+        font-weight: 300
+        color: #ffffff
+        text-align: center
+        margin: 9px 0 0 0
+    &__title
+        font-family: var(--title-fonts)
+        margin: 26px 0 0 0
+        font-size: 72px
+        line-height: 1.2
+        font-weight: 700
+        color: var(--main-color)
+    &__subtitle
+        font-family: var(--title-fonts)
+        margin: 9px 0 0 0
+        font-size: 42px
+        line-height: 1.2
+        font-weight: 400
+        color: #ffffff
+    &__items
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 260px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-icon
+            height: 64px
+        &-descr
+            margin-top: 13px
+            font-size: 16px
+            line-height: 22px
+            font-weight: 300
+            color: #ffffff
+    &__divider
+        position: relative
+        margin: 38px auto 27px auto
+        width: 10px
+        height: 10px
+        border-radius: 100%
+        background: #ffff
+        &::before
+            content: ""
+            position: absolute
+            height: 1px
+            width: 390px
+            background: #ffff
+            left: calc(50% + 20px)
+            top: 50%
+        &::after
+            content: ""
+            position: absolute
+            height: 1px
+            width: 390px
+            background: #ffff
+            right: calc(50% + 20px)
+            top: 50%
+    &__btn
+        display: block
+        margin: 39px auto 0 auto

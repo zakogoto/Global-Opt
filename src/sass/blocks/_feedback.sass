@@ -1,0 +1,44 @@
+.feedback
+    padding: 51px 0 65px 0
+.slider
+    position: relative
+    margin-top: 31px
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        opacity: 0.3
+        &_active
+            display: flex
+            flex-direction: column
+            align-items: center
+            opacity: 1
+    &__head
+        display: flex
+        align-items: center
+    &__img
+        margin: 0 40px
+        width: 114px
+        height: 114px
+    &__left, &__right
+        position: absolute
+        cursor: pointer
+        top: 12%
+    &__left
+        left: 40%
+    &__right
+        right: 40%
+    &__descr
+        margin-top: 20px
+        width: 600px
+        text-align: center
+    &__name
+        font-size: 18px
+        line-height: 22px
+        font-weight: 700
+        color: #3a3a3a
+    &__text
+        margin-top: 12px
+        font-size: 14px
+        font-weight: 300
+        line-height: 22px
