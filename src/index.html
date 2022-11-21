@@ -268,17 +268,22 @@
     </section>
 
     <section class="feedback">
-        <div class="container">
-            <h2 class="title title_fz26">отзывы наших клиентов</h2>
-            <div class="divider"></div>
-            <h3 class="title title_fz21">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</h3>
+        <h2 class="title title_fz26">отзывы наших клиентов</h2>
+        <div class="divider"></div>
+        <h3 class="title title_fz21">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</h3>
+        <div class="feedback__wrap">
             <div class="slider">
-                <div class="slider__item slider__item_active">
-                    <div class="slider__head">
-                        <!-- <div class="slider__left"><img src="icons/slider/chevron_left.svg" alt=""></div>
-                        <div class="slider__right"><img src="icons/slider/chevron_right.svg" alt=""></div> -->
-                        <div class="slider__img"><img src="img/feedback/feedback_img_1.png" alt="client"></div>
+                <div class="slider__item">
+                    <div class="slider__img"><img src="img/feedback/feedback_img_1.png" alt="client"></div>
+                    <div class="slider__descr">
+                        <div class="slider__name">Дмитрий Иванов</div>
+                        <p class="slider__text">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании.
+                        </p>
                     </div>
+                </div>
+                <div class="slider__item slider__item_active">
+                    <div class="slider__img"><img src="img/feedback/feedback_img_1.png" alt="client"></div>
                     <div class="slider__descr">
                         <div class="slider__name">Анисимова Ольга</div>
                         <p class="slider__text">
@@ -287,20 +292,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <div class="slider__head">
-                        <div class="slider__img"><img src="img/feedback/feedback_img_1.png" alt="client"></div>
-                    </div>
-                    <div class="slider__descr">
-                        <div class="slider__name">Дмитрий Иванов</div>
-                        <p class="slider__text">
-                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании.
-                        </p>
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__head">
-                        <div class="slider__img"><img src="img/feedback/feedback_img_1.png" alt="client"></div>
-                    </div>
+                    <div class="slider__img"><img src="img/feedback/feedback_img_1.png" alt="client"></div>
                     <div class="slider__descr">
                         <div class="slider__name">Сергей Валиев</div>
                         <p class="slider__text">
@@ -309,9 +301,34 @@
                     </div>
                 </div>
             </div>
+            <div class="prev"><img src="icons/slider/chevron_left.svg" alt=""></div>
+            <div class="next"><img src="icons/slider/chevron_right.svg" alt=""></div>
         </div>
     </section>
-    <script src="js/tiny-slider.js"></script>
+
+    <section class="text-us">
+        <div class="container">
+            <div class="text-us__block">
+                <div class="text-us__head">
+                    <h2 class="text-us__title">Остались вопросы?</h2>
+                    <h3 class="text-us__subtitle">Напишите нам!</h3>
+                </div>
+                <form action="#" class="text-us__form">
+                    <div class="text-us__inputs">
+                        <input type="name" required name="name" placeholder="Ваше имя...">
+                        <input type="phone" required name="phone" placeholder="Ваш номер телефона...">
+                        <input type="email" required name="email" placeholder="Ваш e-mail...">
+                    </div>
+                    <textarea name="textarea" id="textarea" placeholder="Сообщение"></textarea>
+                    <button class="btn btn_form text-us__btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1122.8042248012252!2d37.62613565683453!3d55.74793189983549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2sSadovnicheskaya%20St%2C%205%2C%20Moskva%2C%20Russia%2C%20115035!5e0!3m2!1sen!2skz!4v1669044535642!5m2!1sen!2skz" allowfullscreen="none" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
